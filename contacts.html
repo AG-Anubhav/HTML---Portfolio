@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>My contact is below:</p>
+
+<div class="contact-icons">
+  <div class="contact-item">
+    <a href="mailto:anubhavcodee@example.com" target="_blank">
+      <img src="./Images/gmail.png" height = 90 alt="Email" />
+      <p>Email</p>
+    </a>
+  </div>
+  <div class="contact-item">
+    <a href="https://www.linkedin.com/in/anubhavcodee" target="_blank">
+      <img src="./Images/linkedin.png" height = 90 alt="LinkedIn" />
+      <p>LinkedIn</p>
+    </a>
+  </div>
+  <div class="contact-item">
+    <a href="https://github.com/Anubhav-Git-Hub" target="_blank">
+      <img src="./Images/github.png" height = 90 alt="GitHub" />
+      <p>GitHub</p>
+    </a>
+  </div>
+</div>
+
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Mobile Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="back-link">
+      <a href="index.html">&larr; Back to Main Page</a>
+    </div>
+  </div>
+</body>
+</html>
