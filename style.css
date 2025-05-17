@@ -6,31 +6,34 @@ body {
 }
 
 .container {
+  width: 90%;
   max-width: 800px;
   margin: 40px auto;
   background: #fff;
-  padding: 20px 40px;
+  padding: 5vw;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .top-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 30px;
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
   object-fit: cover;
-  margin-right: 100px;
+  margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -38,6 +41,7 @@ h2 {
   padding-bottom: 5px;
   margin-bottom: 10px;
   color: #00aaff;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -45,6 +49,7 @@ ul {
 }
 
 section {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -68,8 +73,10 @@ section {
   border-radius: 20px;
   font-size: 14px;
 }
+
 .edu-entry {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
 }
@@ -82,9 +89,6 @@ section {
   text-align: right;
   font-style: italic;
   white-space: nowrap;
-}
-section {
-  margin-top: 40px;
 }
 
 .project-block {
@@ -113,28 +117,34 @@ section {
 .project-block a:hover {
   text-decoration: underline;
 }
+
 .indented {
-  margin-left: 20px; /* Adjust as needed (e.g., 30px, 40px) */
+  margin-left: 20px;
 }
+
 .skills-courses {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
   gap: 40px;
 }
 
-.skills, .courses {
-  flex: 1;
+.skills,
+.courses {
+  flex: 1 1 100%;
 }
 
-.skills h2, .courses h2 {
-  font-size: 1.2em;
+.skills h2,
+.courses h2 {
+  font-size: 1.1rem;
   border-bottom: 1px solid #000;
   padding-bottom: 4px;
   margin-bottom: 10px;
 }
 
-.skills p, .courses ul {
+.skills p,
+.courses ul {
   margin: 8px 0;
 }
 
@@ -142,9 +152,10 @@ section {
   list-style-type: disc;
   padding-left: 20px;
 }
+
 .courses ul li {
-  margin-bottom: 5px;  /* Adds space between list items */
-  line-height: 1.3;    /* Increases line spacing for readability */
+  margin-bottom: 5px;
+  line-height: 1.3;
 }
 
 .achievements {
@@ -152,7 +163,7 @@ section {
 }
 
 .achievements h2 {
-  font-size: 20px;
+  font-size: 1.1rem;
   margin-bottom: 10px;
   text-transform: uppercase;
   border-bottom: 1px solid #ccc;
@@ -167,7 +178,45 @@ section {
   margin-bottom: 8px;
   line-height: 1.5;
 }
+
 .top-section:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+}
+
+/* ✅ Responsive Tweaks */
+@media (max-width: 600px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin: 0 auto 20px;
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .skills-courses {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .edu-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu-right {
+    text-align: left;
+    margin-top: 5px;
+  }
 }
