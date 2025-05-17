@@ -104,3 +104,13 @@ a:hover {
   font-weight: bold;
   color: #0073b1; /* Example color for LinkedIn */
 }
+
+.form-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0077cc; /* or any brand color */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
